@@ -25,7 +25,7 @@ SECRET_KEY = '@*ro_$%7(g1znu9@988h*0=++cu_)oy*i5t&$!gl%!q9743e^9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['akivavika.pythonanywhere.com']
 
 
 # Application definition

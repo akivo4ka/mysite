@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather: City</title>
+</head>
+<body>
+<div style="text-align:center;">
+    <h2>{{ object }}</h2>
+    <p>
+    {% if weather_data.error %}
+        Error: {{ weather_data.error }}
+    {% else %}
+        {{ weather_data.city }},
+        {{ weather_data.time }},
+        {{ weather_data.description }},
+        {{ weather_data.temperature_celsius }}&#xB0; C,
+        {{ weather_data.temperature_fahrenheit }}&#xB0; F
+    {% endif %}
+    </p>
+    Go to <a href="{% url 'weather:index' %}">all cities</a> or <a href="{% url 'weather:city-add' %}">add new city</a>
+</div>
+</body>
+</html>

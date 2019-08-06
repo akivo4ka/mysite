@@ -25,7 +25,10 @@ SECRET_KEY = '@*ro_$%7(g1znu9@988h*0=++cu_)oy*i5t&$!gl%!q9743e^9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['akivavika.pythonanywhere.com']
+ALLOWED_HOSTS = [
+    'akivavika.pythonanywhere.com',
+    'localhost'
+]
 
 
 # Application definition
@@ -106,7 +109,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = None
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 

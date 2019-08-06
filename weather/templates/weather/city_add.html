@@ -15,5 +15,12 @@
         <input type="submit" value="Save">
     </form>
 </div>
+{% if not form.is_valid %}
+<div style="text-align:center;">
+    <p>
+        See <a href="{% url 'weather:index' %}">all cities</a>
+    </p>
+</div>
+{% endif %}
 </body>
 </html>
